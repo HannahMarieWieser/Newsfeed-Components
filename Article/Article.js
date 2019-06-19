@@ -5,7 +5,7 @@ class Article {
   constructor(domElement) {
     // assign this.domElement to the passed in domElement 
     //is this right?
-    this.domElement = domElement 
+    this.domElement = domElement;
     // create a reference to the ".expandButton" class. 
     this.expandButton =domElement.querySelector('.expandButton')
     // Using your expandButton reference, update the text on your expandButton to say "expand"
@@ -19,7 +19,7 @@ class Article {
   expandArticle() {
     // Using our reference to the domElement, toggle a class to expand or hide the article.
     this.domElement.classList.toggle('article-open')
-
+    //can i change the button or would I have to append the css? or just change the text content?
   }
 }
 
